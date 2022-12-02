@@ -1,7 +1,9 @@
+package y2020
+
 import scala.io.Source
 
 object Day4 extends App {
-  val input = Source.fromResource("Day4Input.txt").getLines().reduce((acc, cur) => {
+  val input = Source.fromResource("y2020/Day4Input.txt").getLines().reduce((acc, cur) => {
     if (cur.isEmpty) {
       acc + "\n"
     } else {

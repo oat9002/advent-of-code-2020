@@ -1,7 +1,9 @@
+package y2020
+
 import scala.io.Source
 
 object Day2 extends App {
-  val input = Source.fromResource("Day2Input.txt").getLines().toList
+  val input = Source.fromResource("y2020/Day2Input.txt").getLines().toList
   val result = input.map(isValidPassword(_, true)).count(_ == true)
   println(result)
   val result2 = input.map(isValidPassword(_, false)).count(_ == true)

@@ -1,7 +1,9 @@
+package y2020
+
 import scala.io.Source
 
 object Day5 extends App {
-  val input = Source.fromResource("Day5Input.txt").getLines().toList
+  val input = Source.fromResource("y2020/Day5Input.txt").getLines().toList
   val allSeat = input.map(x => {
     val result = getRowAndCol(x)
     getSeat(result._1, result._2)

@@ -1,8 +1,10 @@
+package y2020
+
 import scala.annotation.tailrec
 import scala.io.Source
 
 object Day6 extends App {
-  val input = Source.fromResource("Day6Input.txt").getLines()
+  val input = Source.fromResource("y2020/Day6Input.txt").getLines()
     .map(x => if (x.isEmpty) " " else x)
     .reduce((acc, cur) => acc + cur)
     .split(" ")

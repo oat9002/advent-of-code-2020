@@ -1,3 +1,5 @@
+package y2020
+
 
 object Day1 extends App {
   val input = Input.get

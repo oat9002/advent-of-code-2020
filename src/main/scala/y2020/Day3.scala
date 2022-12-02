@@ -1,7 +1,9 @@
+package y2020
+
 import scala.io.Source
 
 object Day3 extends App {
-  val input = Source.fromResource("Day3Input.txt").getLines().toList
+  val input = Source.fromResource("y2020/Day3Input.txt").getLines().toList
 
   def countTrees(right: Int, down: Int): BigInt = {
     var columnIdx = right
